@@ -1,0 +1,12 @@
+{
+  "description": "Generated flow examples, not a real capture.",
+  "model": "random_forest",
+  "records": 64,
+  "flaggedRecords": 40,
+  "severityCounts": {
+    "low": 24,
+    "medium": 16,
+    "high": 12,
+    "critical": 12
+  }
+}

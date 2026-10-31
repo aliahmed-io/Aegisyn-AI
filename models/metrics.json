@@ -1,0 +1,790 @@
+{
+  "logistic_regression": {
+    "id": "logistic_regression",
+    "name": "Logistic Regression (L2 Regularized)",
+    "type": "Linear Classifier",
+    "version": "1.0.0-baseline",
+    "isBaseline": true,
+    "accuracy": 0.9987,
+    "precision": 1.0,
+    "recall": 0.9939,
+    "f1Score": 0.9969,
+    "rocAuc": 1.0,
+    "prAuc": 1.0,
+    "falsePositiveRate": 0.0,
+    "falseNegativeRate": 0.0061,
+    "inferenceLatencyMs": 0.03,
+    "trainSamples": 3499,
+    "testSamples": 750,
+    "confusionMatrix": {
+      "truePositive": 162,
+      "falsePositive": 0,
+      "trueNegative": 587,
+      "falseNegative": 1
+    },
+    "featureImportances": [
+      {
+        "feature": "ct",
+        "importance": 0.1738,
+        "description": "Network telemetry attribute"
+      },
+      {
+        "feature": "ct",
+        "importance": 0.1564,
+        "description": "Network telemetry attribute"
+      },
+      {
+        "feature": "ct",
+        "importance": 0.1496,
+        "description": "Network telemetry attribute"
+      },
+      {
+        "feature": "ct",
+        "importance": 0.1395,
+        "description": "Network telemetry attribute"
+      },
+      {
+        "feature": "dttl",
+        "importance": 0.0674,
+        "description": "Destination to source time to live value"
+      },
+      {
+        "feature": "dpkts",
+        "importance": 0.0477,
+        "description": "Destination to source packet count"
+      },
+      {
+        "feature": "spkts",
+        "importance": 0.0368,
+        "description": "Source to destination packet count"
+      },
+      {
+        "feature": "dur",
+        "importance": 0.0254,
+        "description": "Record total flow duration in seconds"
+      }
+    ],
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0061
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "prCurve": [
+      {
+        "recall": 0.2173,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2267,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2369,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2481,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2608,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2744,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2895,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3064,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.326,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3475,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.3721,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4005,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4347,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4738,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5208,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.578,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.652,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7443,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.867,
+        "precision": 1.0
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.9632
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.7669
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5767
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.3865
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.1963
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.0
+      }
+    ],
+    "calibrationCurve": [
+      {
+        "meanPredicted": 0.0017,
+        "fractionOfPositives": 0.0
+      },
+      {
+        "meanPredicted": 0.1128,
+        "fractionOfPositives": 0.0
+      },
+      {
+        "meanPredicted": 0.3605,
+        "fractionOfPositives": 1.0
+      },
+      {
+        "meanPredicted": 0.833,
+        "fractionOfPositives": 1.0
+      },
+      {
+        "meanPredicted": 0.9972,
+        "fractionOfPositives": 1.0
+      }
+    ]
+  },
+  "random_forest": {
+    "id": "random_forest",
+    "name": "Random Forest Classifier",
+    "type": "Ensemble (Bagging)",
+    "version": "2.1.0",
+    "isBaseline": false,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1Score": 1.0,
+    "rocAuc": 1.0,
+    "prAuc": 1.0,
+    "falsePositiveRate": 0.0,
+    "falseNegativeRate": 0.0,
+    "inferenceLatencyMs": 0.264,
+    "trainSamples": 3499,
+    "testSamples": 750,
+    "confusionMatrix": {
+      "truePositive": 163,
+      "falsePositive": 0,
+      "trueNegative": 587,
+      "falseNegative": 0
+    },
+    "featureImportances": [
+      {
+        "feature": "ct",
+        "importance": 0.7935,
+        "description": "Network telemetry attribute"
+      },
+      {
+        "feature": "dttl",
+        "importance": 0.0429,
+        "description": "Destination to source time to live value"
+      },
+      {
+        "feature": "spkts",
+        "importance": 0.0415,
+        "description": "Source to destination packet count"
+      },
+      {
+        "feature": "dbytes",
+        "importance": 0.0328,
+        "description": "Destination to source transaction bytes"
+      },
+      {
+        "feature": "dmeansz",
+        "importance": 0.0161,
+        "description": "Mean packet size transmitted by destination"
+      },
+      {
+        "feature": "dload",
+        "importance": 0.0134,
+        "description": "Destination bits per second rate"
+      },
+      {
+        "feature": "smeansz",
+        "importance": 0.0131,
+        "description": "Mean packet size transmitted by source"
+      },
+      {
+        "feature": "dpkts",
+        "importance": 0.013,
+        "description": "Destination to source packet count"
+      }
+    ],
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.2822
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.3988
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.454
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.5337
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.5583
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.589
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.6135
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.6503
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.6626
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.6871
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.7239
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.7914
+      },
+      {
+        "fpr": 0.075,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.0869,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.092,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1073,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1175,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1278,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1397,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1465,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1874,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.2692,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.2743,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "prCurve": [
+      {
+        "recall": 0.2173,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5507,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.6653,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7149,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7376,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7689,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7951,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.8191,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.8446,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.8717,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.9056,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.9368,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.9702,
+        "precision": 1.0
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.9939
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.9571
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.9141
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.8773
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.8405
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.8037
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.7607
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.6994
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.6503
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5951
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.5337
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.0
+      }
+    ],
+    "calibrationCurve": [
+      {
+        "meanPredicted": 0.0012,
+        "fractionOfPositives": 0.0
+      },
+      {
+        "meanPredicted": 0.8756,
+        "fractionOfPositives": 1.0
+      },
+      {
+        "meanPredicted": 0.9973,
+        "fractionOfPositives": 1.0
+      }
+    ]
+  },
+  "hist_gradient_boosting": {
+    "id": "hist_gradient_boosting",
+    "name": "HistGradientBoosting (LightGBM Architecture)",
+    "type": "Ensemble (Boosting)",
+    "version": "2.4.0",
+    "isBaseline": false,
+    "accuracy": 0.9987,
+    "precision": 1.0,
+    "recall": 0.9939,
+    "f1Score": 0.9969,
+    "rocAuc": 1.0,
+    "prAuc": 1.0,
+    "falsePositiveRate": 0.0,
+    "falseNegativeRate": 0.0061,
+    "inferenceLatencyMs": 0.089,
+    "trainSamples": 3499,
+    "testSamples": 750,
+    "confusionMatrix": {
+      "truePositive": 162,
+      "falsePositive": 0,
+      "trueNegative": 587,
+      "falseNegative": 1
+    },
+    "featureImportances": [
+      {
+        "feature": "ct_srv_dst",
+        "importance": 0.0186,
+        "description": "Connections containing the same service and destination IP in 100 records"
+      },
+      {
+        "feature": "ct_dst_ltm",
+        "importance": 0.012,
+        "description": "Connections to the same destination IP in 100 records"
+      },
+      {
+        "feature": "ct_srv_src",
+        "importance": 0.0093,
+        "description": "Connections containing the same service and source IP in 100 records"
+      },
+      {
+        "feature": "ct_src_ltm",
+        "importance": 0.0049,
+        "description": "Connections from the same source IP in 100 records"
+      },
+      {
+        "feature": "dpkts",
+        "importance": 0.0004,
+        "description": "Destination to source packet count"
+      },
+      {
+        "feature": "state",
+        "importance": 0.0,
+        "description": "TCP state machine status (FIN, CON, INT)"
+      },
+      {
+        "feature": "proto",
+        "importance": 0.0,
+        "description": "Transport layer protocol (TCP, UDP, ICMP)"
+      },
+      {
+        "feature": "service",
+        "importance": 0.0,
+        "description": "Network service / port mapping (http, ssl, dns, ftp)"
+      }
+    ],
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.135
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.1902
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.9939
+      },
+      {
+        "fpr": 0.0017,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1431,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1499,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.1976,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.2112,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.2658,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.3049,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.3356,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.7649,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.7802,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.7939,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.8024,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.8143,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.8228,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.8535,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.8739,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.879,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.8995,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.9693,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 0.9779,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "prCurve": [
+      {
+        "recall": 0.2173,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2239,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2299,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2362,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2462,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.2543,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4644,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.4939,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5258,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.5582,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.6151,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.6653,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7212,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.7874,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.8624,
+        "precision": 1.0
+      },
+      {
+        "recall": 0.9588,
+        "precision": 1.0
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.9325
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.816
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.7055
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.589
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.4785
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.362
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.2515
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.1166
+      },
+      {
+        "recall": 1.0,
+        "precision": 0.0
+      }
+    ],
+    "calibrationCurve": [
+      {
+        "meanPredicted": 0.0012,
+        "fractionOfPositives": 0.0
+      },
+      {
+        "meanPredicted": 0.2565,
+        "fractionOfPositives": 0.0
+      },
+      {
+        "meanPredicted": 0.4402,
+        "fractionOfPositives": 0.5
+      },
+      {
+        "meanPredicted": 0.5567,
+        "fractionOfPositives": 1.0
+      },
+      {
+        "meanPredicted": 0.8577,
+        "fractionOfPositives": 1.0
+      },
+      {
+        "meanPredicted": 0.9963,
+        "fractionOfPositives": 1.0
+      }
+    ]
+  }
+}

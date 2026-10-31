@@ -1,0 +1,9 @@
+'use client';
+import { useEffect, useState } from 'react';
+import { useSourceRefresh } from '@/services/dataSource';
+import { Sidebar } from '@/components/navigation/Sidebar';
+import { Header } from '@/components/navigation/Header';
+import { ObservationAnalytics } from '@/components/dashboard/ObservationAnalytics';
+import { fetchSonarEvents } from '@/services/api';
+import { SonarEvent } from '@/types/threat';
+export default function TrafficAnalyticsPage(){const [events,setEvents]=useState<SonarEvent[]>([]);useEffect(()=>{fetchSonarEvents().then(setEvents);},[]);useSourceRefresh(()=>{void fetchSonarEvents().then(setEvents);});const durations=events.filter(e=>e.flowDuration!==null);const sensor=events.some(e=>e.detectionSource==='suricata');return <div className="app-shell"><Sidebar/><div className="app-content"><Header/><main id="main-content" tabIndex={-1} className="workspace-page"><h1>Traffic analytics</h1><p>Statistics for {events.length.toLocaleString()} loaded observations from the selected data source. Up to 2,000 records are loaded for visualization.</p><section className="workspace-panel"><div className="summary-grid"><div><span>Average flow duration</span><strong>{durations.length?(durations.reduce((s,e)=>s+(e.flowDuration??0),0)/durations.length).toFixed(3)+' sec':'—'}</strong></div><div><span>Total packets</span><strong>{events.reduce((s,e)=>s+(e.totalPackets??0),0).toLocaleString()}</strong></div><div><span>TCP share</span><strong>{events.length?(events.filter(e=>e.protocol==='TCP').length/events.length*100).toFixed(1)+'%':'—'}</strong></div><div><span>{sensor?'Sensor alerts':'Flagged flows'}</span><strong>{events.filter(e=>e.predictedMalicious).length.toLocaleString()}</strong></div></div></section>{events.length?<ObservationAnalytics events={events}/>:<section className="workspace-panel"><p>Upload a dataset and run analysis to see traffic statistics.</p></section>}</main></div></div>;}
